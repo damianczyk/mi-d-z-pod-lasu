@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miód z Pod Lasu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f1da;
+            color: #5a4b2b;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e2d49a;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #705e2b;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #705e2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        h2 {
+            color: #8c6b2b;
+        }
+        footer {
+            background-color: #e2d49a;
+            padding: 10px;
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .contact-info a {
+            color: #705e2b;
+            text-decoration: none;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border: 1px solid #e2d49a;
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #8c6b2b;
+            padding: 10px;
+            text-align: left;
+        }
+        .pricing-table th {
+            background-color: #e2d49a;
+            color: #705e2b;
+        }
+        .pricing-table td {
+            background-color: #f7f1da;
+        }
+        .bee {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=HfHVwMqs&id=09BDB5A2387712F48DF9AF56862E6FAFA5D81AC9&thid=OIP.HfHVwMqsgRTHEa0WPKn7nAHaE7&mediaurl=https%3a%2f%2fwww.terazkrosno.pl%2fimages%2frrrcontent%2fextra_images%2fw-lesie-pszczelarskim-swietowali-dzien-pszczol-AX26Oy.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1df1d5c0caac8114c711ad163ca9fb9c%3frik%3dyRrYpa9vLoZWrw%26pid%3dImgRaw%26r%3d0&exph=575&expw=863&q=zdjecie+pszcz%c3%b3%c5%82+w+lesie&simid=608048438035888867&FORM=IRPRST&ck=548D1BE40F5387F6624651639C17C3C6&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0); /* Wstaw link do swojego obrazu pszczółki */
+            background-size: cover;
+            animation: fly 10s linear infinite;
+        }
+        @keyframes fly {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(100vw) translateY(-100vh); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Miód z Pod Lasu</h1>
+    </header>
+
+    <nav>
+        <a href="#o-miodach">O Miodach</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#zamowienie">Zamówienie</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="o-miodach">
+        <h2>O Miodach i Produktach Pszczelich</h2>
+        <p>Miód i produkty pszczelarskie to naturalne skarby, które niosą ze sobą wiele zdrowotnych korzyści. Miód jest bogaty w antyoksydanty, które pomagają w walce z wolnymi rodnikami, wzmacniają układ odpornościowy i działają przeciwzapalnie. Propolis ma właściwości antybakteryjne, a pyłek pszczeli to doskonałe źródło białka i witamin.</p>
+        <p>Nasze miody pochodzą z najczystszych terenów, gdzie pszczoły zbierają nektar z kwiatów pełnych zdrowia i energii. Oferujemy miody z różnych kwiatów, każdy z nich ma unikalny smak i właściwości.</p>
+        <img src="https://example.com/miod1.jpg" alt="Słoik miodu" class="product-image">
+        <img src="https://example.com/miod2.jpg" alt="Miód w plastrze" class="product-image">
+    </section>
+
+    <section id="cennik">
+        <h2>Cennik</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Opis</th>
+                    <th>Cena</th>
+                    <th>Wybór</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Miód Kremowany</td>
+                    <td>Idealny do smarowania pieczywa</td>
+                    <td>45 zł</td>
+                    <td><input type="checkbox" name="product" value="Miód Kremowany"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Miód Wielokwiatowy</td>
+                    <td>Bogaty w różnorodne aromaty</td>
+                    <td>40 zł</td>
+                    <td><input type="checkbox" name="product" value="Miód Wielokwiatowy"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Miód Lipowy</td>
+                    <td>Intensywny smak lipy</td>
+                    <td>50 zł</td>
+                    <td><input type="checkbox" name="product" value="Miód Lipowy"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Miód Rzepakowy</td>
+                    <td>Delikatny i łagodny</td>
+                    <td>40 zł</td>
+                    <td><input type="checkbox" name="product" value="Miód Rzepakowy"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Miód Akacjowy</td>
+                    <td>Przezroczysty i słodki</td>
+                    <td>45 zł</td>
+                    <td><input type="checkbox" name="product" value="Miód Akacjowy"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Miód Odsklepiony</td>
+                    <td>Świeży, z naturalnym aromatem</td>
+                    <td>70 zł</td>
+                    <td><input type="checkbox" name="product" value="Miód Odsklepiony"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Pierzga</td>
+                    <td>Wartościowe produkty zdrowotne</td>
+                    <td>190 zł (kg)</td>
+                    <td><input type="checkbox" name="product" value="Pierzga"> Wybierz</td>
+                </tr>
+                <tr>
+                    <td>Kit/Propolis</td>
+                    <td>Produkt o właściwościach leczniczych</td>
+                    <td>400 zł (kg)</td>
+                    <td><input type="checkbox" name="product" value="Kit/Propolis"> Wybierz</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="zamowienie">
+        <h2>Formularz Zamówienia</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Imię i nazwisko:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Adres e-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="address">Adres dostawy:</label><br>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+            
+            <label for="quantity">Ilość (kg):</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+            
+            <input type="submit" value="Wyślij Zamówienie">
+        </form>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <p>Telefon: <a href="tel:+48505897579">+48 505 897 579</a></p>
+            <p>Email: <a href="mailto:miod.z.pod.lasu2002@gmail.com">miod.z.pod.lasu2002@gmail.com</a></p>
+            <p>Adres: Gościejewo 2, 06-100 Pułtusk</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Miód z Pod Lasu. Wszelk
